@@ -1,6 +1,6 @@
 /** @type {import("semantic-release").Config} */
 module.exports = {
-  branches: ["main"],
+  branches: ["release"],
   plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
@@ -10,7 +10,7 @@ module.exports = {
         changelogFile: "CHANGELOG.md",
       },
     ],
-    "@semantic-release/npm",
+    // "@semantic-release/npm",
     "@semantic-release/github",
     [
       "@semantic-release/git",
